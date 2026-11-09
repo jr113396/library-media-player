@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Media Controller</title>
+        <link  rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+        <!--<h1>State: {{state}}</h1>
+        <h1>Chapter: {{chapter}}/{{chapter_counter}}</h1>
+        <h1>Time: {{time}}</h1>-->
+        <container>
+        <a href="/play"><block><h1>Play</h1></block></a>
+        <a href="/pause"><block><h1>Pause</h1></block></a>
+        <a href="/next"><block><h1>Next Video</h1></block></a>
+        <a href="/previous"><block><h1>Previous Video</h1></block></a>
+        <a href="/sources"><block><h1>Select Video</h1></block></a>
+        <a href="/toggle-mute"><block><h1>{{["Mute","Unmute"][isMuted]}}</h1></block></a>
+        <a href="/seek_fw/30000"><block><h1>Foward 30s</h1></block></a>
+        <a href="/seek_bk/30000"><block><h1>Back 30s</h1></block></a>
+
+
+
+
+        </container>
+   </body>
+</html>

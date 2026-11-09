@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Sources</title>
+         <link  rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <h1>State: {{state}}</h1>
+
+        <container>
+        <a href="/"><block><h1>Back</h1></block></a>
+
+
+        {% for source in sources %}
+        <a href="/source/{{source}}"><block class="small"><h1>{{source}}</h1></block></a>
+        {% endfor %}
+        </container>
+ 
+    </body>
+</html>
